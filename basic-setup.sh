@@ -4,7 +4,7 @@ echo "======================================="
 echo "Install Basic Packages"
 echo "======================================="
 
-sudo apt install -y wget curl git gcc g++ cmake sudo vim ca-certificates gnupg gpg apt-transport-https
+sudo apt install -y wget curl git gcc g++ cmake sudo vim ca-certificates gnupg gpg apt-transport-https fonts-firacode
 
 echo "======================================="
 echo "Config Git"
@@ -63,3 +63,9 @@ sudo sh -c 'echo "deb [arch=amd64,arm64,armhf signed-by=/etc/apt/keyrings/packag
 rm -f packages.microsoft.gpg
 sudo apt update
 sudo apt install code
+
+echo "======================================="
+echo "Install Input method"
+echo "======================================="
+
+sudo apt install -y fcitx5 fcitx5-chinese-addons fcitx5-mozc
