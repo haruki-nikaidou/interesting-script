@@ -7,6 +7,19 @@ echo "======================================="
 sudo apt install -y wget curl git gcc g++ cmake sudo vim ca-certificates gnupg gpg apt-transport-https
 
 echo "======================================="
+echo "Config Git"
+echo "======================================="
+
+# Prompt for username and email
+read -p "Please enter your Git username: " git_username
+read -p "Please enter your Git email: " git_email
+
+# Set the username and email in global Git config
+git config --global user.name "$git_username"
+git config --global user.email "$git_email"
+
+
+echo "======================================="
 echo "Install Nodejs"
 echo "======================================="
 
