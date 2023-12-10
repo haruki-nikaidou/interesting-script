@@ -2,8 +2,8 @@
 
 git clone https://github.com/lightnovel-center/linovelib2epub.git
 
-pushd linovelib2epub || exit 1
-python3 -m venv .venv
+cd "linovelib2epub" || exit 1
+python3 -m venv venv
 source ./venv/bin/activate
 pip install -r requirements.txt
 pip install -e .
