@@ -9,7 +9,7 @@ pip install -r requirements.txt
 pip install -e .
 
 pushd "src" || exit 1
-wget -O "download.py" "https://github.com"
+wget -O "download.py" "https://raw.githubusercontent.com/haruki-nikaidou/interesting-script/main/linovel/download.py"
 
 echo "==========================="
 echo "准备完成，请修改 download.py"
